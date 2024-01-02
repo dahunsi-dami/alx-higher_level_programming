@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 	listint_t *current;
 
 	current = list;
-	temp = current;
+	temp = list;
 
 	while (current != NULL)
 	{
