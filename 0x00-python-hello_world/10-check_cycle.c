@@ -12,11 +12,8 @@ int check_cycle(listint_t *list)
 	listint_t *temp;
 	listint_t *current;
 
-	if (list != NULL)
-	{
-		current = list;
-		temp = list;
-	}
+	current = list;
+	temp = list;
 
 	while (current != NULL)
 	{
