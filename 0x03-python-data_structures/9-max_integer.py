@@ -3,7 +3,6 @@ def max_integer(my_list=[]):
     if my_list == "":
         return None
     nl = my_list.copy()
-    print(nl)
     llen = len(nl)
     i = 0
     while i < llen:
