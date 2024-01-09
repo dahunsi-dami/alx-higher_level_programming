@@ -19,5 +19,4 @@ def max_integer(my_list=[]):
                 my_list[i + 1] = temp
         i = i + 1
     hi = my_list[-1]
-    print(my_list)
     return hi
