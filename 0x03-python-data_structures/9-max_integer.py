@@ -2,22 +2,21 @@
 def max_integer(my_list=[]):
     if my_list == "":
         return None
-    nl = my_list.copy()
-    llen = len(nl)
+    llen = len(my_list)
     i = 0
     while i < llen:
         if i == 7:
-            if nl[i] < nl[i - 1]:
-                temp = nl[i]
-                nl[i] = nl[i - 1]
-                nl[i - 1] = temp
+            if my_list[i] < my_list[i - 1]:
+                temp = my_list[i]
+                my_list[i] = my_list[i - 1]
+                my_list[i - 1] = temp
         else:
-            j = nl[i]
-            max = nl[i + 1]
+            j = my_list[i]
+            max = my_list[i + 1]
             if j > max:
-                temp = nl[i]
-                nl[i] = max
-                nl[i + 1] = temp
+                temp = my_list[i]
+                my_list[i] = max
+                my_list[i + 1] = temp
         i = i + 1
-    hi = nl[-1]
+    hi = my_list[-1]
     return hi
