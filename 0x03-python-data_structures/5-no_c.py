@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    nstring = my_string.translate({ord("c"): None})
-    nstring = nstring.translate({ord("C"): None})
+    nstring = my_string.translate({99: None})
+    nstring = nstring.translate({67: None})
     return nstring
