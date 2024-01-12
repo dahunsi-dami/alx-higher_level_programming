@@ -4,7 +4,7 @@ def search_replace(my_list, search, replace):
     nlist = my_list.copy()
     i = 0
     while i < llen:
-        if nlist[i] == 2:
-            nlist[i] = 89
+        if nlist[i] == search:
+            nlist[i] = replace
         i += 1
     return nlist
