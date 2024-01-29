@@ -52,7 +52,5 @@ class Rectangle:
     def __repr__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        modl = type(self).__module__
         klas = type(self).__name__
-        memad = hex(id(self))
         return f"{klas}({self.__width}, {self.__height})"
