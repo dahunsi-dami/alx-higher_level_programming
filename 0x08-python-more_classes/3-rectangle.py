@@ -60,12 +60,3 @@ class Rectangle:
                 result += "#"
             result += "\n"
         return result
-
-    def __repr__(self):
-        """returns official string representation of rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        modl = type(self).__module__
-        klas = type(self).__name__
-        memad = hex(id(self))
-        return f"<{modl}.{klas} object at {memad}>"
