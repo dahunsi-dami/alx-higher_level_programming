@@ -66,8 +66,6 @@ class Rectangle:
 
     def __repr__(self):
         """returns official string representation of rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return ""
         klas = type(self).__name__
         return f"{klas}({self.__width}, {self.__height})"
 
