@@ -3,9 +3,10 @@
 
 
 class Rectangle:
+    """ Object representation of a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """ Object representation of a rectangle."""
+        """Initialization of rectangle's attributes."""
         self.width = width
         self.height = height
 
