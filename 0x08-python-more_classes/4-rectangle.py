@@ -52,13 +52,13 @@ class Rectangle:
 
     def __str__(self):
         """returns informal string representation of rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return ""
         result = ""
-        for y in range(self.__height):
-            for x in range(self.__width):
-                result += "#"
-            result += "\n"
+        if self.__width != 0 and self.__height != 0:
+            for y in range(self.__height):
+                for x in range(self.__width):
+                    result += "#"
+                if y != self.__height - 1:
+                    result += "\n"
         return result
 
     def __repr__(self):
