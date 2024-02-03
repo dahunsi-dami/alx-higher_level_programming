@@ -31,3 +31,18 @@ TypeError: matrix_divided() missing 1 required positional argument: 'div'
 Check for when float is passed as div:
 >>> matrix_divided(matrix, 2.5)
 [[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]]
+
+Make matrix of list of tuples:
+>>> matrix = [[1, 2] [3, 4]]
+Traceback (most recent call last):
+	...
+TypeError: list indices must be integers or slices, not tuple
+
+Make matrix of list of lists with uneven length:
+>>> matrix = [[1, 2, 3], [4, 5, 6, 7, 8]]
+
+Pass matrix with list of lists of uneven length:
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
