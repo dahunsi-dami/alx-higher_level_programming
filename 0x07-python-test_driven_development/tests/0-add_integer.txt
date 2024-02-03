@@ -50,3 +50,9 @@ Check for when float overflow is passed as argument:
 Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
+
+Check for when NaN is passed as argument:
+>>> add_integer(5, NaN)
+Traceback (most recent call last):
+    ...
+NameError: name 'NaN' is not defined
