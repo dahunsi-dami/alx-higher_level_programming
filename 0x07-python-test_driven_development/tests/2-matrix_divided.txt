@@ -1,4 +1,4 @@
-0. Elements of list of list division module
+2. Elements of list of list division module
 ===========================
 
 How to use ``matrix_divided(matrix, div)``
