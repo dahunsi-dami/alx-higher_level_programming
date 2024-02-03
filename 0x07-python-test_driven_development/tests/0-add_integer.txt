@@ -1,0 +1,20 @@
+0. Integers addition module
+===========================
+
+How to use ``add_integer``
+--------------------------
+
+Import module and the function in the module:
+>>> add_integer = __import__("0-add_integer").add_integer
+
+Sum two integers a and b together with the function:
+>>> add_integer(4, 4)
+8
+
+Check if adding positive & negative integers work well:
+>>> add_integer(4, -4)
+0
+
+See if adding negative & positive integers work too:
+>>> add_integer(-4, 4)
+0
