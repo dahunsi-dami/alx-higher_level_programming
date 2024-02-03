@@ -44,3 +44,9 @@ Check if int and string are passed as arguments:
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
+
+Check for when float overflow is passed as argument:
+>>> add_integer(5, float('inf'))
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
