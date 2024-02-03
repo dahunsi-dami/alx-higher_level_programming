@@ -56,3 +56,9 @@ Check for when NaN is passed as argument:
 Traceback (most recent call last):
     ...
 NameError: name 'NaN' is not defined
+
+Check for when None is passed as an argument:
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
