@@ -52,10 +52,10 @@ Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
 Check for when float NaN is passed as argument:
->>> add_integer(5, float(NaN))
+>>> add_integer(5, float('NaN'))
 Traceback (most recent call last):
     ...
-NameError: name 'NaN' is not defined
+ValueError: cannot convert float NaN to integer
 
 Test for when function is missing one argument:
 >>> add_integer(4)
