@@ -1,0 +1,58 @@
+3. Module that prints full name
+===========================
+
+How to use ``say_my_name(first_name, last_name="")``
+--------------------------
+
+Import module and the function in the module:
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Pass only first name and last name to the function:
+>>> say_my_name("Dre", "Dahunsi")
+My name is Dre Dahunsi
+
+Pass first and last name that aren't strings to function:
+>>> say_my_name(Dre, Dahunsi)
+Traceback (most recent call last):
+	...
+NameError: name 'Dre' is not defined
+
+Pass only first name to the function:
+>>> say_my_name("Dre")
+My name is Dre 
+
+Pass only last name to the function:
+>>> say_my_name(last_name="Dahunsi")
+Traceback (most recent call last):
+	...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Pass None as the only argument to the function:
+>>> say_my_name(None)
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+
+Pass No argument to say_ny_name:
+>>> say_my_name()
+Traceback (most recent call last):
+	...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Pass a number as first name:
+>>> say_my_name(2, "Dahunsi")
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+
+Pass a number as last name:
+>>> say_my_name("Dre", 2)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+
+Pass a number as both first and last name:
+>>> say_my_name(3, 5)
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
