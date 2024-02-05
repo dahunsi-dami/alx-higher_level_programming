@@ -55,3 +55,9 @@ Pass matrix with element that's not integer or float to function:
 Traceback (most recent call last):
 	...
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+Pass string to matrix_divided function:
+>>> matrix_divided("string", "string")
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
