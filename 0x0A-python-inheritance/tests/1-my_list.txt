@@ -48,3 +48,10 @@ Check if list with non-int element is sorted:
 Traceback (most recent call last):
 	...
 TypeError: '<' not supported between instances of 'str' and 'int'
+
+Create empty instance of MyList:
+>>> e_list = MyList()
+
+Send empty list to print_sorted:
+>>> e_list.print_sorted()
+[]
