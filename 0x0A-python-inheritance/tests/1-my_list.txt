@@ -55,3 +55,14 @@ Create empty instance of MyList:
 Send empty list to print_sorted:
 >>> e_list.print_sorted()
 []
+
+Add negative and positive elements to e_list:
+>>> e_list.append(3)
+>>> e_list.append(-1)
+>>> e_list.append(5)
+>>> e_list.append(2)
+>>> e_list.append(0)
+
+Pass e_list with negative and positive int to print_sorted:
+>>> e_list.print_sorted()
+[-1, 0, 2, 3, 5]
