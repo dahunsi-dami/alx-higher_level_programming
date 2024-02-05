@@ -29,3 +29,22 @@ Check if print_sorted method sorts list:
 Check that my_list is a list:
 >>> isinstance(my_list, list)
 True
+
+Create another instance of MyList:
+>>> s_list = MyList()
+
+Add elements to s_list:
+>>> s_list.append(7)
+>>> s_list.append("string")
+>>> s_list.append(2)
+>>> s_list.append(5)
+
+Check to see if s_list is printed:
+>>> print(s_list)
+[7, 'string', 2, 5]
+
+Check if list with non-int element is sorted:
+>>> s_list.print_sorted()
+Traceback (most recent call last):
+	...
+TypeError: '<' not supported between instances of 'str' and 'int'
