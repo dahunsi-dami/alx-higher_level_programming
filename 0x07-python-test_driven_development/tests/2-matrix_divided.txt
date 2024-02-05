@@ -54,7 +54,7 @@ Pass matrix with element that's not integer or float to function:
 >>> matrix_divided(matrix, 2)
 Traceback (most recent call last):
 	...
-TypeError: unsupported operand type(s) for /: 'str' and 'int'
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Pass string to matrix_divided function:
 >>> matrix_divided("string", "string")
