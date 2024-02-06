@@ -37,5 +37,3 @@ Pass no arguments to integer_validator method:
 Traceback (most recent call last):
 	...
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-
