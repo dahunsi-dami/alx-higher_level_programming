@@ -1,0 +1,29 @@
+7. Module that validates an integer.
+=====================================
+
+How to use ``BaseGeometry`` module
+----------------------------------
+
+Import module and the function in the module:
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+Create instance of BaseGeometry:
+>>> bg = BaseGeometry()
+
+Pass string as value to integer_validator method:
+>>> bg.integer_validator("name", "Dre")
+Traceback (most recent call last):
+	...
+TypeError: name must be an integer
+
+Pass 0 as value to BaseGeometry:
+>>> bg.integer_validator("name", 0)
+Traceback (most recent call last):
+	...
+ValueError: name must be greater than 0
+
+Pass negative number as value to BaseGeometry:
+>>> bg.integer_validator("name", -5)
+Traceback (most recent call last):
+	...
+ValueError: name must be greater than 0
