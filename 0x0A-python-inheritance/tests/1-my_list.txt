@@ -72,5 +72,6 @@ Collect returned list to a variable:
 [-1, 0, 2, 3, 5]
 
 Check if print_sorted returns a new list or not:
->>> id(r_list) == id(e_list)
+>>> id(e_list) == id(e_list.print_sorted())
+[-1, 0, 2, 3, 5]
 False
