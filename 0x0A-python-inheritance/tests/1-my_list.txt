@@ -26,6 +26,10 @@ Check if print_sorted method sorts list:
 >>> my_list.print_sorted()
 [1, 4, 6, 7, 8, 9]
 
+Print my_list to see if doesn't change order:
+>>> print(my_list)
+[4, 6, 1, 9, 8, 7]
+
 Check that my_list is a list:
 >>> isinstance(my_list, list)
 True
