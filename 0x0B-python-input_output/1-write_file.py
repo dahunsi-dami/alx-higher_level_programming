@@ -10,10 +10,5 @@ def write_file(filename="", text=""):
         filename: name of the text file.
         text: string to be written to text file.
     """
-    with open(filename, mode='r+', encoding='utf-8') as a_file:
-        a_file.write(text)
-        count = 0
-        for i in a_file:
-            for j in i:
-                count += 1
-        return count
+    with open(filename, 'w', encoding='utf-8') as a_file:
+        return a_file.write(text)
