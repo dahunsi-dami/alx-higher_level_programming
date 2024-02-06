@@ -66,3 +66,11 @@ Add negative and positive elements to e_list:
 Pass e_list with negative and positive int to print_sorted:
 >>> e_list.print_sorted()
 [-1, 0, 2, 3, 5]
+
+Collect sorted list into a variable:
+>>> s_list = e_list.print_sorted()
+[-1, 0, 2, 3, 5]
+
+Check if print_sorted returns a new list:
+>>> s_list is None
+True
