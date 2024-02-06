@@ -27,3 +27,7 @@ Pass negative number as value to BaseGeometry:
 Traceback (most recent call last):
 	...
 ValueError: name must be greater than 0
+
+Check if bg is instance of BaseGeometry:
+>>> isinstance(bg, BaseGeometry)
+True
