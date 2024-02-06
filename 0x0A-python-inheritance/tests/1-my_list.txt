@@ -67,11 +67,7 @@ Pass e_list with negative and positive int to print_sorted:
 >>> e_list.print_sorted()
 [-1, 0, 2, 3, 5]
 
-Collect returned list to a variable:
->>> r_list = e_list.print_sorted()
-[-1, 0, 2, 3, 5]
-
 Check if print_sorted returns a new list or not:
->>> id(e_list) == id(e_list.print_sorted())
+>>> e_list == e_list.print_sorted()
 [-1, 0, 2, 3, 5]
 False
