@@ -8,4 +8,3 @@ class MyList(list):
     def print_sorted(self):
         selfsort = sorted(self)
         print(selfsort)
-        return selfsort
