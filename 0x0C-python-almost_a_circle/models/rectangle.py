@@ -71,15 +71,17 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout rectangle instace with #."""
-        for i in range(self.__y):
-            print()
+        if self.__y != 0:
+            for i in range(self.__y):
+                print()
         for line in range(self.__height):
-            for k in range(self.__x):
-                print(" ", end="")
-                if k == self.__x - 1:
-                    for j in range(self.__width):
-                        print("#", end="")
-                    print()
+            if self.__x != 0:
+                for k in range(self.__x):
+                    print(" ", end="")
+                    if k == self.__x - 1:
+                        for j in range(self.__width):
+                            print("#", end="")
+                        print()
 
     def __str__(self):
         """overrides __str__ method to return a string."""
