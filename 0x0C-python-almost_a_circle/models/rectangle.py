@@ -82,6 +82,10 @@ class Rectangle(Base):
                         for j in range(self.__width):
                             print("#", end="")
                         print()
+            else:
+                for row in range(self.__width):
+                    print("#", end="")
+                print()
 
     def __str__(self):
         """overrides __str__ method to return a string."""
