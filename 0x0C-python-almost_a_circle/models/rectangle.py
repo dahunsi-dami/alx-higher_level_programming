@@ -75,3 +75,13 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """overrides __str__ method to return a string."""
+        klas = type(self).__name__
+        haid = self.id
+        hx = self.__x
+        hy = self.__y
+        wit = self.__width
+        hait = self.__height
+        return f"[{klas}] ({haid}) {hx}/{hy} - {wit}/{hait}"
