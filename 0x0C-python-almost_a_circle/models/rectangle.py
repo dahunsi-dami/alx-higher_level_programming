@@ -96,3 +96,11 @@ class Rectangle(Base):
         wit = self.__width
         hait = self.__height
         return f"[{klas}] ({haid}) {hx}/{hy} - {wit}/{hait}"
+
+    def update(self, *args):
+        """assigns an arg to each attribute."""
+        arglist = ["id", "width", "height",
+                    "x", "y"]
+        arglen = len(args)
+        for i in range(0, arglen):
+            setattr(self, arglist[i], args[i])
