@@ -22,9 +22,5 @@ if (argv.length === 2 || argv.length === 3) {
     }
     i++;
   }
-
-  if (typeof stud === undefined) {
-    stud = consid;
-  }
   console.log(stud);
 }
