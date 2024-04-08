@@ -10,7 +10,7 @@ if (argv.length === 2 || argv.length === 3) {
   console.log(0);
 } else {
   while (i < argv.length) {
-	consid = parseInt(argv[i]);
+    consid = parseInt(argv[i]);
     if (consid > coll[0]) {
       stud = coll[0];
       coll[0] = consid;
