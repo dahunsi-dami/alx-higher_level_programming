@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const { argv } = require('node:process');
-const coll = [0];
+const coll = [];
 let consid;
 let stud = -Infinity;
 let i = 2;
@@ -11,13 +11,13 @@ if (argv.length === 2 || argv.length === 3) {
 } else {
   while (i < argv.length) {
     consid = parseInt(argv[i]);
-    if (consid > coll[0]) {
+    if (consid > coll[0] || coll.length === 0) {
       stud = coll[0];
       coll[0] = consid;
-      i++;
-    } else {
-      i++;
+    } else if (consid > stud && consid !== coll[0]) {
+      stud = consid;
     }
+    i++;
   }
   console.log(stud);
 }
