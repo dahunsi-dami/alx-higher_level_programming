@@ -11,7 +11,7 @@ if (argv.length === 2 || argv.length === 3) {
 } else {
   while (i < argv.length) {
     consid = parseInt(argv[i]);
-    if (consid >= coll[0] || coll.length === 0) {
+    if (consid >= coll[0]) {
       stud = coll[0];
       coll[0] = consid;
     } else if (consid > stud && consid !== coll[0]) {
