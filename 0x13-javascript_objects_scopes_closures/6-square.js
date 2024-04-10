@@ -10,7 +10,7 @@ class Square extends firstSquare {
       bluck = 'X';
     } else {
       bluck = c;
-	}
+    }
 
     for (let i = 0; i < this.height; i++) {
       let row = '';
