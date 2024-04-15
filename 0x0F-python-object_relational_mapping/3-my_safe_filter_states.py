@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Takes arg, print rows where name match arg."""
+"""
+Takes arg, print rows where name match arg,
+and parameterize query to prevent sql injection.
+"""
 
 if __name__ == "__main__":
     import MySQLdb
