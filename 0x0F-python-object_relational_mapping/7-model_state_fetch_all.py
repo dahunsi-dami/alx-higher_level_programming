@@ -16,7 +16,6 @@ if __name__ == "__main__":
     session = Session()
 
     state_objs = session.query(State).all()
-    # state_objs = session.query(State).order_by(State.id.asc()).all()
     for state in state_objs:
         print(f"{state.id}: {state.name}")
 
