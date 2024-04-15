@@ -13,12 +13,11 @@ if __name__ == "__main__":
             db=sys.argv[3],
             charset="utf8")
     cur = conn.cursor()
-    if sys.argv[4].isalpha():
-        cur.execute("""SELECT * FROM states
-                    WHERE states.name = '{}'
-                    ORDER BY states.id ASC""".format(sys.argv[4]))
-        query_rows = cur.fetchall()
-        for row in query_rows:
-            print(row)
+    cur.execute("""SELECT * FROM states
+                WHERE states.name = '{}'
+                ORDER BY states.id ASC""".format(sys.argv[4]))
+    query_rows = cur.fetchall()
+    for row in query_rows:
+        print(row)
     cur.close()
     conn.close()
