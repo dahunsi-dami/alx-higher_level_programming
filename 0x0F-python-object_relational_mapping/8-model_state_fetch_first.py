@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""lists all state objects from hbtn_0e_6_usa database."""
+"""print 1st state object from hbtn_0e_6_usa database."""
 
 
 if __name__ == "__main__":
