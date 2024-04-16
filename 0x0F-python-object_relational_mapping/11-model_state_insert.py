@@ -15,12 +15,11 @@ if __name__ == "__main__":
 
     session = Session()
 
-    state_add = State(id=6, name='Louisiana')
+    state_add = State(name='Louisiana')
     session.add(state_add)
 
-    state = session.commit()
+    session.commit()
 
-    state_id = state_add.id
-    print(state_id)
+    print(state_add.id)
 
     session.close()
