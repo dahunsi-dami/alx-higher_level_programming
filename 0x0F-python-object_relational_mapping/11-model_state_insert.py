@@ -21,6 +21,6 @@ if __name__ == "__main__":
     state = session.commit()
 
     state_id = state_add.id
-    print(f"{state_id}")
+    print(state_id)
 
     session.close()
