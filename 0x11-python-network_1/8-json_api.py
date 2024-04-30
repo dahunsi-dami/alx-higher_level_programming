@@ -22,7 +22,7 @@ if __name__ == "__main__":
             user_id = response.get('id')
             user_name = response.get('name')
             print(f"[{user_id}] {user_name}")
-            else:
-                print("No result")
-        except ValueError:
-            print("Not a valid JSON")
+        else:
+            print("No result")
+    except ValueError:
+        print("Not a valid JSON")
