@@ -19,11 +19,15 @@ if __name__ == "__main__":
     if r.status_code == 200:
         try:
             response = r.json()
-            if response:
-                for i in response:
-                    user_id = i.get('id')
-                    user_name = i.get('name')
-                    print(f"[{user_id}] {user_name}")
+            if isinstance(response, list):
+                if response:
+                    for i in response:
+                        user_id = i.get('id')
+                        user_name = i.get('name')
+                        if user_id is not None and user_name is not None:
+                            print(f"[{user_id}] {user_name}")
+                        else:
+                            print("No result")
             else:
                 print("No result")
         except ValueError:
