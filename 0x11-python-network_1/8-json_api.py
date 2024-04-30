@@ -16,18 +16,12 @@ if __name__ == "__main__":
 
     r = requests.post('http://0.0.0.0:5000/search_user', data={'q': val})
 
-    if r.status_code == 200:
-        try:
-            response = r.json()
-            if isinstance(response, list):
-                if response:
-                    for i in response:
-                        user_id = i.get('id')
-                        user_name = i.get('name')
-                        if user_id is not None and user_name is not None:
-                            print(f"[{user_id}] {user_name}")
-                        else:
-                            print("No result")
+    try:
+        response = r.json()
+        if response:
+            user_id = response.get('id')
+            user_name = response.get('name')
+            print(f"[{user_id}] {user_name}")
             else:
                 print("No result")
         except ValueError:
