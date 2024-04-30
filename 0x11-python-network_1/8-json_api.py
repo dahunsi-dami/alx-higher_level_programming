@@ -16,14 +16,15 @@ if __name__ == "__main__":
 
     r = requests.post('http://0.0.0.0:5000/search_user', data={'q': val})
 
-    try:
-        response = r.json()
-        if response:
-            for i in response:
-                user_id = i.get('id')
-                user_name = i.get('name')
-                print(f"[{user_id}] {user_name}")
-        else:
-            print("No result")
-    except ValueError:
-        print("Not a valid JSON")
+    if r.status_code == 200:
+        try:
+            response = r.json()
+            if response:
+                for i in response:
+                    user_id = i.get('id')
+                    user_name = i.get('name')
+                    print(f"[{user_id}] {user_name}")
+            else:
+                print("No result")
+        except ValueError:
+            print("Not a valid JSON")
