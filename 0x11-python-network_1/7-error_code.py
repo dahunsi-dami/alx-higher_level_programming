@@ -14,6 +14,6 @@ if __name__ == "__main__":
         r.raise_for_status()
         print(r.text)
     except HTTPError as e:
-        print(f"Error code: {e.response.status.code}")
+        print(f"Error code: {e.response.status_code}")
     except ConnectionError as e:
         print(f"URL Error: {e}")
